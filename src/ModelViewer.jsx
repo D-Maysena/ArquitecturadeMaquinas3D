@@ -285,26 +285,29 @@ const ModelViewer = () => {
 
       {/* Contenedor principal para Canvas y Componentes */}
       <Box
-        sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          gap: 4,
-          maxWidth: "1800px",
-          mx: "auto",
-          position: "relative",
-          zIndex: 10,
-        }}
-      >
+  sx={{
+    display: "flex",
+    flexDirection: { xs: "column", md: "row" },
+    gap: 4,
+    maxWidth: "1800px",
+    mx: "auto",
+    position: "relative",
+    zIndex: 10,
+    width: "100%",
+  }}
+>
+
         {/* Canvas - 60% de ancho en desktop */}
-        <Box
-          sx={{
-            width: { xs: "100%", md: "100%" },
-            height: { xs: "60vh", md: "85vh" },
-            border: "2px solid rgba(30, 41, 59, 0.5)",
-            borderRadius: 3,
-            position: "relative",
-          }}
-        >
+       <Box
+  sx={{
+    width: "100%",
+    height: { xs: "50vh", sm: "60vh", md: "80vh", lg: "85vh" },
+    border: "2px solid rgba(30, 41, 59, 0.5)",
+    borderRadius: 3,
+    position: "relative",
+  }}
+>
+
           <Box
             sx={{
               position: "absolute",
@@ -378,18 +381,19 @@ const ModelViewer = () => {
 
         {/* Sección de Componentes - 40% de ancho en desktop */}
         <Box
-          sx={{
-            width: { xs: "100%", md: "40%" },
-            color: "white",
-            p: 3,
-            borderRadius: 3,
-            bgcolor: "rgba(15, 23, 42, 0.7)",
-            backdropFilter: "blur(10px)",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
-            maxHeight: { md: "80vh" },
-            overflowY: { md: "auto" },
-          }}
-        >
+  sx={{
+    width: { xs: "100%", md: "35%" },
+    color: "white",
+    p: 3,
+    borderRadius: 3,
+    bgcolor: "rgba(15, 23, 42, 0.7)",
+    backdropFilter: "blur(10px)",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
+    maxHeight: { xs: "auto", md: "80vh" },
+    overflowY: { md: "auto" },
+  }}
+>
+
           <Typography variant="h4" sx={{ mb: 4 }}>
             Componentes
           </Typography>

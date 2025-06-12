@@ -40,15 +40,16 @@ export const Hotspot = ({
           transform: 'translateX(-50%)'
         }}
       >
-        <Box sx={{
-          width: 300,
-          bgcolor: 'rgba(15, 23, 42, 0.95)',
-          borderRadius: 2,
-          p: 2,
-          boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
-          borderLeft: '4px solid #3b82f6',
-          backdropFilter: 'blur(10px)'
-        }}>
+       <Box sx={{
+  width: { xs: 250, sm: 280, md: 300 },
+  bgcolor: 'rgba(15, 23, 42, 0.95)',
+  borderRadius: 2,
+  p: 2,
+  boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+  borderLeft: '4px solid #3b82f6',
+  backdropFilter: 'blur(10px)'
+}}>
+
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
             {icon}
             <Typography variant="h6" sx={{ color: 'white' }}>
